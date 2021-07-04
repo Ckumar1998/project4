@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/53e4d81b31.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="main-cont">
+        <div class="first-child">
+<div class="first-element" style="margin-top:10px">
+    <i class="fas fa-blog fa-3x"></i>
+    <p>Blog</p>
+</div>
+<div class="second-element">
+    <i class="fas fa-user fa-3x"></i>
+    <p>student</p>
+</div>
+<div class="third-element">
+    <i class="fas fa-book fa-3x"></i>
+    <p>Lesson</p>
+</div>
+<div class="forth-element">
+    <i class="fas fa-cog fa-3x"></i>
+    <p>Setting</p>
+</div>
+        </div>
+        <div class="second-child">
+           
+<div class="maincontain-element">
+    <h3  style="margin-right: 92%;"><i class="fas fa-play"></i> Video</h3>
+    <div class="maincontain-input">
+        <form>
+        <input type="text" placeholder="enter the video url">
+        </form>
+        <p style="font-size: 25px; margin-top:60px;">Or</p>
+    </div>
+    <div>
+        <!-- Upload Area -->
+<div id="uploadArea" class="upload-area">
+    <!-- Header -->
+    <div class="upload-area__header">
+    
+     <h4 style="text-align:center;">upload </h4>
+    </div>
+    <!-- End Header -->
+  
+    <!-- Drop Zoon -->
+    <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
+      <span class="drop-zoon__icon">
+        <i class='bx bxs-file-image'></i>
+      </span>
+      <p class="drop-zoon__paragraph">Drop your file here or Click to browse</p>
+      <span id="loadingText" class="drop-zoon__loading-text">Please Wait</span>
+      <img src="" alt="Preview Image" id="previewImage" class="drop-zoon__preview-image" draggable="false">
+      <input type="file" id="fileInput" class="drop-zoon__file-input" accept="image/*">
+    </div>
+    <!-- End Drop Zoon -->
+  
+    <!-- File Details -->
+    <div id="fileDetails" class="upload-area__file-details file-details">
+      <h3 class="file-details__title">Uploaded File</h3>
+  
+      <div id="uploadedFile" class="uploaded-file">
+        <div class="uploaded-file__icon-container">
+          <i class='bx bxs-file-blank uploaded-file__icon'></i>
+          <span class="uploaded-file__icon-text"></span> <!-- Data Will be Comes From Js -->
+        </div>
+  
+        <div id="uploadedFileInfo" class="uploaded-file__info">
+          <span class="uploaded-file__name">Proejct 1</span>
+          <span class="uploaded-file__counter">0%</span>
+        </div>
+      </div>
+    </div>
+    <!-- End File Details -->
+  </div>
+  <!-- End Upload Area -->
+    </div>
+
+</div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
